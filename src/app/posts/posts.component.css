@@ -1,0 +1,48 @@
+.content {
+    height: calc(100vh - 64px);
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.example-item {
+    height: 50px;
+}
+
+.example-viewport {
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+}
+
+.example-card {
+    max-width: 330px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    padding: 10px;
+    justify-content: stretch;
+    align-items: stretch;
+}
+
+.grid-item {
+    padding: 20px 10px 0px 10px;
+    height: 100%;
+    font-size: 14px;
+    display: grid;
+}
+
+.spinner-item{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+

@@ -1,0 +1,13 @@
+<mat-toolbar>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <span>{{title}}</span>
+    <span class="example-spacer"></span>
+    <mat-form-field appearance="fill">
+        <input matInput placeholder="Search...">
+        <mat-icon matSuffix>search</mat-icon>
+    </mat-form-field>
+</mat-toolbar>
+<app-posts></app-posts>
+<router-outlet></router-outlet>

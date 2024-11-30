@@ -1,0 +1,33 @@
+<cdk-virtual-scroll-viewport #scroller class="content" [itemSize]="2">
+    <div class="grid-container">
+        <div *cdkVirtualFor="let item of posts" class="grid-item">
+            <mat-card class="example-card" appearance="outlined">
+                <mat-card-header>
+                    <div mat-card-avatar style="background-image: url({{item.thumbnailUrl}});"></div>
+                    <mat-card-title>{{item.title}}</mat-card-title>
+                </mat-card-header>
+                <img mat-card-image [src]="item.url" alt="Photo of a Shiba Inu">
+                <mat-card-content>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consectetur id temporibus eaque
+                    aliquid in, vero excepturi, atque neque perferendis fugit asperiores quibusdam dolorum, quisquam
+                    minima? Facilis, autem est! Eum, fugit.
+                </mat-card-content>
+                <mat-card-actions>
+                    <button mat-fab extended color="primary">
+                        <mat-icon>thumb_up_alt</mat-icon>
+                        Like
+                    </button>
+                    <span style="float: right;gap: 2px; flex: auto;"></span>
+                    <button mat-fab extended color="accent">
+                        <mat-icon>share</mat-icon>
+                        Share
+                    </button>
+                </mat-card-actions>
+            </mat-card>
+
+        </div>
+    </div>
+    <div class="spinner-item">
+        <mat-progress-spinner [mode]="'indeterminate'" [diameter]="50"></mat-progress-spinner>
+    </div>
+</cdk-virtual-scroll-viewport>
